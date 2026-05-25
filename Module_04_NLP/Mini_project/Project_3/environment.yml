@@ -1,0 +1,25 @@
+name: bedrock_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # Core AWS SDKs (Crucial to get the latest versions for Bedrock Nova/Claude 3.5 support)
+      # Note: 2026 updates ensure robust Bedrock support
+      - boto3>=1.34.0
+      - botocore>=1.34.0
+      - awscli
+      
+      # LLM Frameworks & RAG Orchestration
+      - langchain>=0.1.0
+      - langchain-aws>=0.1.0
+      - llama-index  # <-- Fixed typo here (added the hyphen)
+      
+      # Data handling & UI (for prototyping)
+      - pandas
+      - numpy
+      - jupyterlab
+      - streamlit
+      - python-dotenv
