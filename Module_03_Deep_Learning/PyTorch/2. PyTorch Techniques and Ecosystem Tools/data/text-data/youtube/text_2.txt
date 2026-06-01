@@ -1,0 +1,798 @@
+Here's the AI news you might have missed this week.
+Quick spoiler alert.
+We're going to talk a lot about Google today.
+This week was Google IO and I did get to attend in person and see the keynote live, demo some of the things,
+talk to some of the people that actually built these tools.
+
+I'd really kind of had a very Google centric week, but again, there was a lot.
+In fact, so much that Google actually released an article this week called 100 things we announced at Google IO 2026.
+Now, I'm not going to talk about all 100.
+I'm going to sort of narrow it down to the things that I think are the most impactful and the most people are going
+
+to care about.
+But let's start with their brand new Gemini models.
+There was actually a couple of new Gemini models announced during IO.
+A lot of people thought they were going to announce some sort of giant leap with a new Gemini model.
+And well, they...
+
+Sort of did they announced the gemini 3.5 family of models but the one that we actually got during google io is actually 3.5
+flash which is their sort of smaller faster model so it's not the most intelligent model in the world but it's faster and cheaper
+than their full-fledged gemini 3.5 pro which they said is coming later if you are somebody that's interested in the benchmarks you're
+
+Here's how the new 3.5 flash stacks up.
+We can see it falls kind of in line when it comes to coding with GPT 5.5 and Opus 4.7,
+sort of falling between the two models on terminal bench and falling just short of Opus and 5.5 on SweeBench Pro.
+
+Where it really sort of stands out is on these various agentic benchmarks for using within agents,
+beating out the Anthropic and OpenAI competition here.
+Now where this model really stands out is its speed to intelligence ratio.
+
+We can see along the bottom axis here, this is speed.
+So further to the right is faster.
+And on this axis here, we have its intelligence level.
+So this new 3.5 flash is pretty much on par with 3.1 pro and Claude Opus 4.7 in terms of intelligence,
+
+but more than double as fast as 3.1 pro and more than three times as fast as GPT 5.5 and Claude Opus.
+So it's a lot faster model for being similarly as smart.
+The other area where it really stands out is its pricing.
+
+So if you're using it via the API, we can see the input price for 3.5 flash is 150 and an output price of$9
+that's per million tokens used.
+So 150 and$9 versus Claude's 4.7 being$5 input and$25 output and OpenAI's GPT 5.5
+Being$5 per million tokens and$30 per million output tokens.
+So a lot faster, a lot cheaper, similar level of capabilities, if not quite as good for things like coding.
+
+However, I said they released two new models this week,
+and the second one is the one that more people are actually talking about and is a bit more impressive,
+and that's the new Gemini Omni model.
+This model is designed to create anything from any input.
+
+Now, right now you can input video and it will understand and edit that video for you.
+But in the future, you're gonna be able to input audio, input images, and sort of output any of those as well.
+Now, I actually sat down with the Gemini Omni team and here's how they described it.
+
+You can think of it as nano banana for video.
+So a really good video editing model where you can basically take any video that you shoot in the real world, regenerate,
+and then edit it using just natural language.
+The second thing we're really proud where the model landed in terms of being able to preserve character consistency.
+So you can take, you know, images of yourself, feed it into the model and then generate new videos of yourself.
+
+That's like really fun, but you can also see how it's useful for marketing ads, those types of applications.
+And then the third thing, reason why we're calling it Gemini Omni is
+Because we really think about it as the next step on our journey towards world models that can understand and generate anything.
+
+Right now, you can put any modality into the model as input, images, videos, text, audio, and generate video.
+But in the future, we look for the model to support also image outputs and audio outputs as well as a path towards Gemini
+to be like truly multimodal, which is something that we've been excited about from the start.
+Essentially any input to video right now and in the future, any input to any style output.
+
+Now, the other thing that's really impressive about this Gemini Omni model is that it's grounded in world knowledge.
+So you know how if you're using nano banana,
+you can say generate an image about how quantum computing works and it will generate an infographic type image,
+
+but it'll do the research and then bake in what it found into the image.
+Well, Omni kind of does that as well, but with videos.
+So for example, here's a claymation explainer of protein folding.
+Proteins start as chains of amino acids.
+They fold into patterns like the alpha helix and flat sections called beta sheets, forming a perfect three-dimensional shape.
+
+So the prompt on that was claymation explainer of protein folding.
+Everything is made out of clay, no hand stop motion accurate.
+Now it only generates 10 seconds at a time right now,
+
+but you can see how an explainer video on a topic you're interested in could be made with just a prompt.
+Now, in order to use Omni, you do need to be on one of their paid plans.
+So AI Plus, Pro, or Ultra.
+But another thing they did announce during Google I.O.
+Was some new pricing for these various Google plans.
+
+So they now have a new Google AI Ultra tier at$100 a month.
+This is a brand new plan.
+And the Google AI Ultra plan that used to be$250 a month was reduced to$200 a month.
+So they did lower the pricing on some of those.
+
+But if you just want to get in on the lowest paid tier,
+Now, if we head on over to the Gemini app here over at gemini.google.com, they also rolled out a new layout.
+We can see the design is slightly different here.
+We now have a new library where we can see all the documents we've created, all of the various media we've created,
+
+and it's all sort of just better organized now.
+There's also new sections for videos, images, a new daily brief feature that they just rolled out, and of course,
+your ability to search your chats and to start a new chat.
+
+But let's first check out Omni.
+If I click into the videos tab here, we can see try a template or describe a video in chat, create with Omni.
+Let's do create a cartoon animation that explains how diffusion models work.
+It's going to go ahead and generate our video, but it's going to ground it in world knowledge.
+Now, you might be curious, how is this different from the VO models?
+
+And I was curious of that as well.
+So I asked, and this is what they said.
+The way to think about it as VO is primarily kind of a text-to-video model.
+And Gemini Omni is more of a sort of video editing, interleaving different modalities together, combining and manipulating different kinds of audio, text, image,
+
+video to produce a desired output.
+Gotcha.
+Significantly more powerful text-to-video model, but also significantly more capable model that can do a lot of other things.
+Like anything in, anything out, right now we're really focusing on video, but more will come.
+There's this AI startup called Victor that plugs directly into your Slack so it can get stuff done for you and your team and is
+
+already connected to everything you already use.
+I thought this was really interesting because I use Slack literally every day.
+It's where I manage my whole business from my YouTube channel to the Future Tools newsletter and website.
+And And you know I love using AI to solve little bottlenecks in my day-to-day work,
+
+but I'm honestly using pure AI chatbots a lot less these days and integrated AI agents like Victor a lot more.
+So instead of typing a generic prompt like, help me find the latest AI news from the past week,
+Victor can actually go into my documents, look at past outlines and research to see what I'm looking for, search the internet,
+
+and generate an outline that I can actually use for my next video.
+Since Victor is already connected to the platforms you're already using, it can also do stuff like pull data directly from Google Ads,
+analyze performance, build a report, send it to your team in Slack, and even follow up on it all on its own.
+
+I can see this being really useful across teams like marketing, ops, or engineering,
+because they can all use the same Victor at the same time across different departments, but with the same context and understanding.
+And that understanding will only get better over time as it learns your workflows, tone, and preferences.
+Plus the most important part is that you stay in control.
+So Victor checks in before anything risky, like sending an external email or moving money.
+
+So it's not going to go off and do something crazy.
+If you want to check out Victor for free, head to the link in the description box.
+And thank you so much to Victor for supporting my channel and sponsoring this portion of today's video.
+
+And in the time it took us to watch that clip, our 10 second video explainer is ready.
+Ever wonder how AI makes images?
+It learns to turn pure static noise back into a masterpiece.
+I mean, with only 10 seconds, it's kind of hard to get a lot of details in there.
+
+But I mean, the animation is semi-correct, right?
+It does start with noise and then finds the images from within the noise.
+But you can start to see how this is similar to what Nano Banana is, but for video.
+
+But it's also designed to edit video.
+So for instance, let's take this video here.
+That's only 11 seconds where I'm playing with a little toy lightsaber.
+Let's pull it in here and let's do turn this into a pixel art animation.
+
+And here's what that generated.
+Now it didn't really stay true to my background here.
+You can see it added like a computer monitor in the background and it sort of changed the angle for some reason right here
+
+when the original video didn't change the angle.
+So it definitely has its issues, but there are some details there that are kind of cool.
+Like it picked up this little wolf on the back and it picked up my guitars on the wall.
+It did its best, but it does still, you know, change some things about it.
+Not just for fun.
+
+I also gave it the prompt at a monkey jumping around and dodging the sword.
+So instead of changing the style, I'm adding new elements into the existing video.
+Let's see how it did.
+
+So we can see our monkey in the corner here.
+He jumps out and another monkey appears.
+So it kind of added two monkeys and then one of them disappeared,
+
+but it added a new monkey that wasn't originally in the scene.
+One of the other features they talked about was the avatar features.
+So if I come down to this
+Plus here and I go up to more uploads, we can see there's a new avatar feature.
+So if I click on avatar, we can add an avatar.
+
+All we do is take a quick selfie video and it'll bring our avatar and voice to any scene with one taps.
+Let's try it.
+So it put a QR code on my screen.
+
+I'm blurring it out just because I don't know what happens if somebody else
+Scans it, but I'm gonna go ahead and scan this QR code here.
+It's asking me to allow camera and microphone.
+
+Okay, let's try this.
+44, 95, 17, 60, 47, 17.
+Okay, so now it's uploading my avatar.
+And now when I jump back to my computer, it looks like I have the ability to use my avatar.
+So add yourself to any frame you create by typing at me or at Matt R.
+
+Wolf into your prompt.
+All right, so let's go ahead and use avatar.
+Let's make...
+Me fight myself at met our wolf battling the man in the video let's just see what it does here all right so i
+can already tell it's a bit wonky just from the screenshot but let's see what we got show me what you can do
+
+Okay well that didn't quite look how i thought it would i also thought i would test it with using the avatar plus the world
+knowledge so i said my avatar explains how quantum computing works on a chalkboard and this is what it gave me traditional computers use
+bits that are either zero or one quantum computers use qubits which can be both at once this phenomenon is called superposition allowing for immense
+power I mean, it actually did a good job.
+I don't know why it gave me an Arizona Diamondbacks hat, but other than that, it looks like me.
+
+It gave a very simplistic version of what quantum computing is, which I mean, not super in depth, but actually accurate.
+And overall, this seemed pretty impressive.
+I gave it the prompt, my avatar slam dunking a ball on a beachside basketball court.
+Let's check it out.
+
+Oh!
+That was a very weird slam dunk, but the likeness, it nailed it.
+It actually got the correct hat this time as well.
+
+Either I'm like nine feet tall or this basketball hoop is only like six feet off the ground.
+It was also very generous on the muscles there.
+I do appreciate that.
+So that's Gemini Omni, which as of right now is really useful for videos, generating videos with knowledge,
+generating videos with your own avatar in them and actually editing videos.
+
+Now, another big announcement that came out of Google this week was Gemini Spark.
+And this is Google's answer to like OpenClaw and Hermes.
+And it's them putting an agent out into the world.
+
+Instead of prompting things and getting responses back, it will actually go out and do actions on your behalf.
+Unlike Hermes and OpenClaw, which will run locally on your computer or on a VPS on a cloud computer somewhere,
+this one runs entirely on Google's servers.
+
+So it will always continue to run even if your own computers aren't online.
+I had the opportunity to sit down with Karey, the CTO of Google DeepMind, and here's how he described it.
+With Spark, we have a full computer that is running in Google Cloud for you.
+
+You might say, look, every day in the morning, send me an email that is motivating me.
+It'll do that.
+It is very simple.
+But you can also ask every day, summarize all the news that is going on around and then send me an email or write
+that in a doc.
+
+Or you can say we have a neighborhood party organization going on.
+Take that organizational job.
+Like it can actually do things like that where it can communicate with the neighbors and make sure that everyone is following up.
+So it can actually do actively things for you that you don't need to pay attention every time.
+Now, since this has access to your Gmail, your Google Calendar and anything that's in your sort of Google ecosystem,
+
+it can connect all those together and take actions with those tools.
+So some examples on their website, it'll give you an inbox summary from your email.
+It'll do things like look across your emails and your Google Calendar and your Google Drive and then pull information together and put it
+all into like a Google sheet for you.
+
+From their blog post here, with Gemini Spark, you can set recurring tasks or triggers, teach it new skills.
+It can create complete workflows, ask it to synthesize raw meeting notes across emails and chats, create polished Google Docs with findings,
+and even draft the companion email kicking off a project.
+
+It's gonna use MCP connectors to work with things like Canva and OpenTable and Instacart to be able to book things on your behalf.
+Now, if you've already built out skills for your OpenClaw or Hermes or Claude Code or Codex,
+I actually asked during one of the demos, are we gonna be able to pull those over and actually use skills that have already
+been created?
+And I think I remember they said you can import skills over if you've built them in other.
+
+That's right.
+Okay.
+You can upload skills.
+
+So yeah.
+There you go.
+It shouldn't be too hard to move over if you are using other agents and wanna try this one instead.
+
+As far as when it's gonna be available, it's currently rolling out to trusted testers.
+And then after that, it will be available to ultra subscribers.
+And then after that, I'm sure they're gonna sort of roll it out to lower and lower tiers.
+Now, if you're worried about an AI agent owned by Google,
+having access to a lot of your private data and making decisions on your behalf, I did actually ask Coray,
+
+the CTO of DeepMind about that as well.
+And here's what he said.
+Everyone will have a different threshold there.
+So it is more about like designing a system where users
+
+Are feeling in control for the kind of control that they want.
+And the agent, of course, they are sort of commonly accepted.
+There are some safety thresholds, but you don't want the agent crossing without you ever approving things.
+For example, right now, we are fine with the agent sending you email because it's your agent.
+
+But if it needs to send an email to someone external, it needs to ask for permission.
+Or if it needs to do anything that touches the external world a little bit on your behalf, you should be in control.
+You need to say that, okay, you can approve it.
+
+You can say that, I'm comfortable, do it.
+And do it in the future, but you should be able to feel like you are in control.
+Those kinds of things are quite important.
+
+Exactly in what cases people are going to use these, we are not prescribing specific use cases,
+but the kinds of things that either information sharing about you or taking actions on behalf of you, users should feel in control.
+So everybody on the Google team was constantly reassuring us that they are designing this to make sure you stay in control and your
+
+agent doesn't go rogue and buy things on your behalf or send emails you don't want it to send.
+Now, I'm just sharing clips and I am kind of cutting up these clips to keep this video moving a little bit.
+But if you want to see my full conversations with the Gemini Omni team, as well as with Coray, the CTO of DeepMind,
+
+I will be making the entire interviews available to subscribers of the Future Tools newsletter.
+So if you're not subscribed to the Future Tools newsletter, head on over to futuretools.io and get subscribed.
+And I'll make sure that the full conversations are available for free to all subscribers.
+
+All right, moving on to the next thing Google announced, which was somewhat of a more controversial update.
+And that is how they're handling google.com and the actual search engine.
+It's starting to sound like the search engine is going to get more and more replaced by like an AI engine.
+So the first thing we'll notice with the new Google search is that it's turning into a longer prompt box instead of just a one
+
+line search.
+So you can type full in prompts straight into Google search instead of going to AI mode.
+So you're essentially going to be in AI mode by default in the near future.
+
+They also demoed what they call search agents, which allows you to search for things and then continually sort of alert you on those
+things.
+It'll keep you updated on those things on a regular basis.
+This almost feels like an evolution of like Google alerts where it will constantly do searches and then alert you when there is new
+
+information based on the thing that you set it up to keep on top of for you.
+They also showed off that Google will write code directly in the search response.
+In this example, they say, how do black holes affect space time?
+
+And you can see it actually codes an interactive visual where they drag the slider around to show the different visual of how things
+are impacted.
+Now, this is similar to features we've recently seen roll out in both Anthropix Cloud and OpenAI's ChatGPT models,
+where it will actually generate visuals for you as well.
+
+And now it looks like something that could happen directly in search when you give it prompts where a visual will help better describe
+the explanation.
+Now, the reason this is sort of a controversial update is that it's sort of making the AI response even more prominent than the actual
+
+search results for what you were looking for.
+So if I do a search for something like best video games of 2026, you have your AI overview right here,
+but it takes up a relatively small amount of space on Google.
+
+I can click show more and sort of get directly into AI mode here.
+But without doing that, I have some organic rankings of people who actually wrote blog posts on the best video games of 2026 so far.
+These are websites that rely on, you know, people actually clicking on the link and going to their website.
+
+They're ad supported or subscription supported, or they're trying to grow a mailing list or sell a product on their site to support their
+business.
+Now, if Google essentially scrapes the responses from all of these blog posts,
+puts them in an AI overview so that nobody ever ends up clicking into the blog posts, well,
+
+that's going to mean a drastic reduction in traffic from Google to these websites.
+And the responses that Google is giving is based on the content that they got from these websites.
+So if people lose their incentive to create content for Google and they stop creating it,
+
+then where does the content come from that Google is then pulling from?
+And that's kind of the issue people are having with this new update.
+If it's going to work the way we think it is.
+If I do the same search inside of AI mode here, it just gives me the response.
+
+I don't need to click into any blog posts.
+It's just telling me the answers to my prompt here and the links to external websites are pushed over here to the right.
+But I'm less likely to click on them because it just kind of told me what they say anyway already.
+
+And they're also rolling out this same feature to YouTube.
+They're rolling out an ask YouTube feature where you can ask questions on YouTube.
+It's going to search through the videos and sort of provide you with the answer potentially without you needing to even click into the video.
+So you can see how this could really negatively impact
+
+Content creators, making this probably one of the more controversial decisions.
+And we'll see if Google really pursues this hard or if they eventually kind of roll back this idea,
+because at the end of the day, they need people to create content so that they can actually have a place to pull the answers
+
+from that they're going to present in their AI overviews.
+So I don't know how smart of a decision it is to take away that incentive for people to create content.
+Again, this is unfolding still.
+
+It doesn't appear that this new mode is rolled out quite yet, but the real
+question is going to be how is Google balancing the AI response with actually organic links and incentivizing people to actually click away from Google?
+Cause that's gonna be the balance they're gonna have to figure out if they still want people to like favor Google.
+
+Quite honestly, this feels like an opportunity where a company like Bing or somebody else that's been trying to top Google in the search
+engine game could sort of swoop in and be like, Hey guys, when you give us a prompt,
+we're just gonna show you organic links and we're not gonna give you AI responses.
+And if a company did that, you're probably gonna see people who just want the old version of Google migrating to a tool like
+
+that.
+Again, Google's gonna figure this out, I think, and they're gonna constantly play with that balance of links versus AI responses,
+but it'll be interesting to see how this plays out.
+
+All right, a few more announcements from Google, and then we'll get into the non-Google stuff.
+I'm gonna kind of move more quickly because I think I've already talked about some of the biggest things during Google I.O.,
+Google introduced what they're calling universal cart.
+It's a shopping cart that actually works across merchants and across services.
+So essentially the idea is you can be browsing the web, looking for different products.
+
+You find one product on one Shopify store.
+You add it to your cart.
+You go to a different store and find a different product that you want.
+And that's completely unrelated on a different Shopify store or on a completely different website, you know, target.com or whatever.
+
+You find something you like there.
+You add it to your cart.
+And you just browse the web and you're adding stuff to your universal cart.
+And when you're done, you check out and then it just kind of sends the payments to all of the places for you.
+That's my understanding of what this universal cart is.
+
+Just one cart that you use for the entire web.
+They also showed off that this cart has like intelligent features.
+Like it'll show things like this is the lowest price it's seen in 30 days.
+It might suggest you use your MX card to get 3% cash back.
+And it will actually double check and confirm that if it thinks you're making a bad choice,
+
+that do you really want to make that choice?
+For example, the CPU and motherboard that are in your cart are not compatible.
+So the example being they added a CPU and a motherboard and it noticed that they won't work together thinking this person's probably buying
+a computer and tells them, hey,
+Are you sure you want to buy those two together?
+
+That could actually be pretty handy, honestly.
+They also created the agent payments protocol, which is going to allow your AI agents to go and check out in these carts on your
+behalf.
+And like Corey already said earlier in our conversation,
+they are making it so you can kind of adjust the level of trust you have for your agent to go buy things on your
+
+behalf.
+If you're a coder or a vibe coder, Google introduced anti-gravity 2.0.
+This is their new IDE, their integrated development environment, where you can have it go and write code for you on your behalf.
+Here's a screenshot of what the new anti-gravity looks like.
+If we're being honest, their old version was kind of like a VS code fork because they brought on the windsurf team and built
+
+it based on that.
+And this new version, it looks an awful lot like OpenAI's Codex product.
+They released some new features in Palmeli, which is like their brand building kit.
+
+It sort of figures out your color schemes and your fonts,
+and it'll build little ads for you and things like that that are on brand.
+Well, they added a few new features like brand books to generate comprehensive guides featuring your brand's custom images, fonts, and colors, and websites.
+
+You can design and stand up a complete website in just a few clicks using your entire brand kit that it designed for you.
+They also showed off their vibe design website tool called Stitch, where you give it a prompt for a website that you want,
+and you can actually watch it sort of build that website out for you in real time.
+
+So it sounds like the website building is in Palmeli, but now also in Stitch, but you can also build websites directly from Palmeli.
+Gemini and you can also build websites directly from anti-gravity and pretty much all of the google products will build websites for you now
+it seems like they also announced gemini for science this is a collection of science tools and experiments designed to expand the scale and precision
+of scientific exploration so it's like a suite of tools to do scientific research and things like that and they also launched science skills
+
+Which is a specialized bundle that integrates insights from over 30 major life science databases and tools, including Uniprot, AlphaFold, AlphaGenome, and InterPro.
+And this is one that I actually thought was pretty dang cool.
+I've always thought Project Genie was fun.
+
+It's where you can sort of
+Prompt almost like a video game world that you can interact with for like 60 seconds at a time i've played with it in some
+previous videos well this new one you can actually do the same thing but put it in real locations using street view from google
+
+so if we head over to project genie here let's go ahead and
+And create our own.
+And we can see it says, choose a location from Google Maps.
+So let's go ahead and select that.
+And here's a location, but just for fun, I'm gonna go ahead and put Petco Park in San Diego.
+
+Okay, so here's like the Petco Park Baseball Stadium here.
+Let's zoom in on our map here and maybe drop it over on this side of the park.
+So now we're on the streets outside of Petco Park and let's go ahead and use this location.
+And then for our character, let's do a monkey on roller skates.
+
+I haven't done that in a while.
+And look at this.
+We've got our monkey on roller skates skating around near Petco Park in San Diego.
+And it's actually grounded by real world map data.
+I just, this is so wild to me because I remember three years ago or so when I was playing with model scope and zero
+
+scope, I would generate a monkey on roller skates and you can barely tell what it even was.
+You're kind of like, if I squint, I see a blurry, fuzzy sort of monkey there and
+And it only lasted like a couple seconds.
+
+And here we are, fast forward just a couple years.
+Now I have a monkey on roller skates skating around in downtown San Diego,
+and I can actually control him and make him jump around.
+And it's in the real world environment.
+Like this to me is just absolutely mind blowing.
+
+Like it's obviously not the best,
+Most insane graphics you've ever seen, but just how far we've come and the amount of time that we've come is just so mind
+blowing.
+
+So yeah, this is like one of the coolest features that rolled out.
+Now let's be fair.
+I have no idea what you're going to use this for.
+
+I mean, maybe you're going to make some fun little videos.
+It's kind of like a novelty right now, like a fun little demo that you can play with, but it's
+really impressive that we can do it now.
+Anyway, that's the new update to Genie, the new like street view grounding, which I thought was pretty cool.
+One of the other big announcements they made was around eyewear.
+
+I was at Google IO, not last year, the year before, and they were already teasing AI glasses from Google.
+And then I was there last year and they demoed AI glasses from Google.
+And then I was here this year and they demoed AI glasses from Google.
+
+We finally have something that's going to get into our hands and we kind of know when it's going to get in our hands.
+Google is partnering with Gentle Monster and Warby Parker to put their version of AI glasses out.
+And there's going to be two versions.
+There's going to be ones that have the camera and the audio very similar to the Meta Ray Bans.
+And then there's going to be the ones that have the display.
+
+The audio version are going to launch first and they're coming in fall.
+We still don't know when the ones with the display are coming.
+You can do a lot of this stuff that you can do with the meta Ray-Bans on these glasses,
+but they almost sound like they're more designed to be on all of the time and sort of giving you things in your ear.
+
+Like when you get a new text message, you don't have to pull your phone out and look at it.
+It'll just say, hey, you have a new text message and sort of tell you what the message is straight to your ear if
+you want it to.
+But you can also ask about what you see.
+It'll help you navigate places.
+
+Like I mentioned, you can manage calls, send texts, have Gemini summarize missed messages, things like that straight into your ears.
+You can snap photos and videos, translate speech and writing, order an Uber, you know, get help with various tasks.
+Again, a lot of the same stuff you can do with the Meta Ray-Bans sound like they're coming to this first iteration of the Google
+
+Glasses.
+And they announced that they're going to make it easier to understand how content was created and edited.
+Their synth ID embeds imperceptible signals into AI generated content, but they actually announced that other companies are going to adopt this standard,
+including competitor, open AI, 11 labs could,
+And more companies to come.
+
+So more and more companies are going to adopt this SynthID standard,
+which means you'll be able to drag an image in or drag an audio file in or drag a video into Gemini.
+And it will actually tell you if it was generated with AI or not, because the AI can read the SynthID watermark
+
+But it is imperceptible to the human eye.
+So cool to see that even competing companies are getting on board because they all believe that it is very important to prevent,
+you know, fake information and deep fakes and that kind of thing.
+And again, there was over a hundred announcements made during Google IO,
+but those are the ones that I found most interesting and probably most important for the most amount of people,
+
+but I'll link to everything that I came across in the description.
+So you can go and learn more about those.
+If I was to sum up,
+Google IO and what they were trying to accomplish this year,
+
+it felt less like they were trying to benchmark max and try to get the best absolute model on all of the benchmarks this
+time around.
+And more like they're hunting for how do we actually make this useful?
+How do we bake this into more products and find more ways for people to
+Actually use these AI tools without having to think about it.
+
+How can we be more proactive?
+How can we provide like daily briefings to people automatically?
+How can we create agents so things just happen on people's behalf?
+How do we make it easier and more intuitive to generate videos?
+How do we make it easier to...
+
+Browse and shop the web.
+It just feels like for a long time, we've seen companies just push the benchmarks, push the benchmarks, push the benchmarks,
+and try to get these models to be better in areas like science and math and things that like most daily everyday people aren't
+really using these models for.
+
+It felt like with this event, Google was like, okay, let's go to the general consumers.
+Let's go to the small businesses.
+Let's go to the like individuals and let's try to figure out ways to make all of this AI stuff we're all releasing actually
+
+more useful and integrated into the ecosystem they're already using.
+I have a feeling a lot of the stuff that we saw at Google IO may not exist a couple of years from now.
+Some of the things will probably get ramped up.
+It feels like they're throwing a lot of things against the wall,
+trying to figure out what users are actually going to use when they bake AI into it.
+
+Those things they're going to probably double down on.
+And then the things that people push back on, well, some of these things they may go, okay,
+we went in the wrong direction a little too far with that.
+Let's pull back on some of these things.
+
+That's kind of what it feels like Google's doing.
+They're in that mode right now.
+Cause right now it's a lot and it's overwhelming and sometimes confusing.
+Like there's six different Google tools right now that have AI baked into them that I can go to to build my website.
+
+When it comes to videos, you've got, you know, Google's Flow and you've got VO and you've got Gemini Omni.
+When it comes to images, Google had Imagine and then they had Nano Banana.
+When it comes to coding, you can generate code over an AI studio or you can use anti-gravity or it'll now generate code straight
+
+in AI search.
+Or you could do the code over on the Gemini app if you want.
+Like there's so many different platforms and there's a lot of like overlapping use cases on a lot of these platforms.
+And I think...
+Where to go to do certain things is sort of getting convoluted and confusing.
+
+And I think that's what Google is going to have to figure out.
+And I think they will.
+I think they're going to sort of dial it in.
+
+And right now, again, it's throwing a bunch of spaghetti at the wall and seeing what sticks.
+But that's not all that happened.
+Before I jump into the rapid fire, there was one other sort of bigger announcement that happened at the end of last week,
+
+but because it happened on Friday, it didn't make it into this video.
+OpenAI rolled out a new personal finance experience inside of ChatGPT.
+So this actually allows you
+To connect your bank details using Plaid straight into ChatGPT.
+And then you can actually use ChatGPT to learn more about your personal finances and actually get guidance on your personal finances directly in ChatGPT,
+
+but it's grounded in your actual bank account information.
+So you can ask it things like, how do I save on subscription
+Costs or how do I balance my investment portfolio or things like that.
+
+And it will look at all of the financial data it knows about you and be able to give you direct advice.
+Now, do most people want to give ChetGPT financial details?
+Yet to be seen.
+It is an interesting concept.
+
+I'm just not sure how I feel yet about a company who's trying to build like an ads based business on top of their
+normal business, having details about my finances.
+Because at what point do some of those financial details get passed along to the potential advertisers in OpenAI?
+
+Like if OpenAI knows all of my spending habits, how much money I have available, what I invest in, where I travel,
+all of these kinds of details, that's starting to get into like creepy territory when it comes to one company knowing a little too
+much about Me especially if they're trying to put like ads in front of me and also if there's ever a point where maybe some of the responses
+chat GPT gives me are influenced by data that it has on me as well as what advertisers want them to do I
+
+I've gone down the whole ChatGPT ad rabbit hole.
+I'm not a fan of that model for chatbots.
+Hopefully it doesn't play out in the way that I'm imagining it could play out.
+But if it does play out the way that we all don't want it to play out,
+
+it having direct access to all my financial details is one of the last things I feel like I want it to have.
+Anyway, let's talk about everything else that happened this week, but I'll do it quickly and we'll do it in a rapid fire.
+I've talked about the Elon Musk versus Sam Altman trial that's been happening for a few weeks.
+
+TLDR, Elon Musk lost.
+The court basically ruled the statute of limitations is up and Elon really doesn't have a case anymore.
+That's kind of how it all ended.
+This was a story that I don't think anybody saw coming, but it actually happened right before Google I.O.
+Kicked off.
+
+And that's that Andrej Karpathy joined Anthropic.
+Now, if you don't know the whole lore behind this, this is interesting because Andrej Karpathy was one of the original co-founders of OpenAI.
+He helped develop LLMs as we know them.
+At one point, he was poached away from OpenAI and went to Tesla and helped develop a bunch of the AI over at Tesla.
+
+He left Tesla, came back to OpenAI,
+Worked at openai for a couple more years and then decided to leave openai to focus on his own projects his own projects being
+he wanted to figure out how to build like an ai education company he's been working on that for the past year or so i
+
+don't remember exactly when he left openai but to hear that he now joined anthropic is just kind of crazy because of all of his
+history over at And he's brilliant by the way.
+If you haven't checked out Andre's YouTube channel, he's a must watch on YouTube.
+
+He actually goes into deep dive tutorials on how you can actually build your own LLMs if you want to.
+And he's, I believe the number one voice in AI over on X.
+He's got 2.6 million followers and pretty much anytime he tweets anything, it goes viral.
+So it's just wild to think that he's going over to Anthropic now.
+
+We actually got a few things out of Spotify that are pretty interesting this week.
+They put on an event out in New York and made a ton of announcements,
+but I'm gonna focus in on a couple of the AI announcements specifically,
+
+starting with the fact that Spotify and Universal Music Group announced a licensing agreement for fan-made covers and remixes.
+So this is like the music industry
+Getting on board with AI and saying, we're gonna let our artists be remixed with AI.
+
+It does say it will open up additional revenue streams, meaning it sounds like if you remix an artist,
+that artist is actually going to get paid for those streams of songs that were remixed.
+So Spotify is sort of figuring out how to get musicians paid when music is generated that sounds like that artist.
+
+Like this has been a big gap in the AI sort of music world that people have been trying to figure out.
+And Spotify seems to be doing it.
+This introduces a creation model where artists and songwriters can directly share in the value generated through AI driven licensed covers and remixes on the Spotify
+platform.
+
+Now you're going to have to be on a Spotify premium plan to use it, but I like this move a lot.
+Now, a few other announcements that Spotify made this week around AI is about podcasts.
+You're actually going to be able to use AI to ask questions about podcasts.
+
+Users can ask Spotify questions about the podcast they're listening or watching and get answers in real time.
+Whether it's clarifying a concept, exploring something mentioned in an episode, or getting recommendations related to their favorite creators,
+they can delve deeper without leaving Spotify.
+
+But they're also letting you create your own AI-generated podcasts.
+Sort of competing with something like Notebook LM.
+They're releasing something called Personal Podcasts, which is an experience that lets listeners generate and schedule short private audio episodes tailored to their interests
+
+and their listening habits.
+So Spotify allowed people to create custom podcasts using agents like your OpenClaw or Hermes.
+And when they saw people doing that, they basically said, hey, let's just build that into Spotify.
+They say all you need to do is write a prompt and Spotify generates personalized private audio based on your input.
+
+It draws on world knowledge and your Spotify taste profile to create something relevant and uniquely yours.
+So things like a daily briefing, a deep dive on topics you're curious about, or a weekly roundup of whatever's on your mind.
+Some examples share my daily city updates and tell me about local concerts from artists I love or help me understand economics in five
+
+minutes.
+And Spotify will go and create that custom podcast for you.
+That's pretty cool.
+Interestingly, Amazon released something very similar this week.
+Alexa Plus now generates podcast episodes on demand.
+
+A new feature creates AI-generated audio episodes on any topic ready to listen whenever you are.
+Alexa can now generate podcast-style episodes on virtually any topic in just minutes.
+No documents or prep work needed.
+
+Just ask and Alexa does the rest.
+If you're a fan of Cursor, they released a new model that's really impressive this week called Composer 2.5.
+When it comes to coding, it's pretty on par with state-of-the-art models
+
+Performing about as good as Opus 4.7 on Terminal Bench.
+On SweeBench Multilingual, it's about on par with Opus and even better than GPT 5.5.
+But the biggest deal is the cost here.
+So we can see Composer 2.5 on this chart is almost as good as Opus 4.7 on Max, almost as good as GPT 5.5.
+But Opus is way up here at like$11.
+
+GPT 5.5 is like, I don't know,$4.
+50 Or something.
+And composer 2.5 is way down here at like less than a dollar per task.
+
+So it's nearly as good as these other models, just way, way cheaper to use.
+And this is a model you can use directly in cursor to do most of what you need it to do.
+And then when you need a much smarter model, you can flip over to GPT 5.5 or Opus, but mostly use composer.
+
+Most of the time, the company stability AI, which is a company I haven't really talked about in quite
+Quite a while, released a new music model this week called Stable Audio 3.0.
+This new model can generate up to six minute songs as well as generate sound effects and it's open weights.
+
+So the sound effects, the small and the medium models are all completely open and only their largest 2.7 billion parameter model seems to be
+closed off.
+The company CREA AI introduced Alluras for CREA 2.
+So Allura, think of it as like a plugin or like an extra effect that you can add on top of images that you
+generate.
+
+So you can have a specific style that you like, you can train Allura on that style,
+and then any image that you generate will match that same style.
+Here's another example of it where these are probably the images it was trained on.
+
+And then when they asked it to create an image with that same character, it made an image right here with that same character.
+I don't know if I've ever really talked about this company,
+but I use this tool behind the scenes a lot when I'm on meetings.
+It's called Granola.
+And it's a tool that when you're on Zoom meetings or Google Meet meetings or things like that, it
+
+will actually listen in and take notes on that meeting for you.
+And then afterwards, it'll just kind of give you a summary or bullet points of what was talked about in that meeting.
+Really really handy well they just rolled out a new feature that actually goes and does research on the people you're talking about before
+
+you even get on the call so their new briefs feature prepares you for your next meeting we can see here that if it
+knows you have a meeting the next day it will look up that person on linkedin and find out details about them so when
+you do jump on a call with them you have a little bit of extra context to help with the conversation you're about to be
+on And finally, as I often do, let's end with a robot.
+
+This week, Boston Dynamics showed their robot that can pick up and carry a fridge around.
+So instead of asking the robot to go to the fridge and grab you a drink,
+this robot goes to the fridge and will bring you the whole dang fridge.
+
+It'll just walk it right over to you.
+Why just grab a drink when you can have the robot bring you the whole fridge and then you can pick the drink yourself?
+The one thing I find funny about this as well is if I pause it right here, yeah,
+that robot's done a little bit of damage to that fridge,
+but it's still impressive that it can go and carry this fridge around for you.
+
+Also, I don't know if that drink's going to be cold.
+This fridge isn't plugged in, clearly.
+Anyway, that's what I got for you this week.
+
+I warned you, it was a lot of Google.
+Google kind of owned the week with all the announcements they put out at Google I.O.
+Google did not sponsor this video, but they did fly me out and put me up in a hotel room at Google so that I
+
+could attend Google I.O., so thank you to them for that.
+Had absolutely no control of what I said or talked about in this video.
+Again, I record these on Thursdays, put them out on Fridays, any news that came out late Thursday or on Friday,
+we'll make it into next week's video.
+My goal with these videos is to sift through all the AI news all week long, drink from the fire hose,
+
+read about all the hype and all the news and all of the announcements and all of the launches and find just the signal
+And turn around and deliver it to you each week.
+Find the things that just are important to the most amount of people because AI is moving so fast.
+
+There's so many announcements.
+There's so much hype.
+There's so many new tools being launched every day now that anybody can vibe code anything.
+I think it's important to try to filter through all that and find what's important to people and what's just kind of...
+Of background noise that you can ignore.
+
+If that's something that you're interested in and you wanna make sure you are always tapped in without needing to keep up with the news
+every single day, consider giving this video a like and subscribing to this channel and I will do my best to give you that one
+breakdown video every week that's gonna keep you fully looped in and on the cutting edge of what's happening in AI and the world
+
+of sort of future technology.
+That's my goal.
+Again, I'd love to like and subscribe.
+I'm trying to get to a million subscribers this year and your support really, really helps me out.
+But again, thanks so much for tuning in, hanging out with me, nerding out with me.
+
+It's been a crazy week in the world of AI.
+Google just sort of unloaded on all of us.
+And yeah, I'm here for it.
+I'm here to keep up with it and do my best to break it all down for you.
+I really, really appreciate you.
+
+And well, hopefully I'll see you in the next one.
+Thanks so much.
+Bye-bye.
+NOOOOOO!
+
