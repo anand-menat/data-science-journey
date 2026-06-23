@@ -5,11 +5,43 @@ import numpy as np
 from torch.utils.data import Dataset, DataLoader
 import re
 import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib as mpl
 
 import torchmetrics
 
 from IPython.display import display,Markdown
 
+
+def apply_dlai_style():
+
+    Plot_Style = {
+        "axes.titlesize": 14,
+        "axes.labelsize": 12,
+        "font.family": "sans",
+        "xtick.labelsize": 10,
+        "ytick.labelsize": 10,
+        "lines.linewidth": 2,
+        "lines.markersize": 6,
+    }
+
+    color_map = {
+        'blue': '#1f77b4',
+        'orange': '#ff7f0e',
+        'green': '#2ca02c',
+        'red': '#d62728',
+        'purple': '#9467bd',
+        'brown': '#8c564b',
+        'pink': '#e377c2',
+        'gray': '#7f7f7f',
+        'olive': '#bcbd22',
+        'cyan': '#17becf'
+    }
+
+    return color_map,Plot_Style
+
+color_map,Plot_Style = apply_dlai_style()
+mpl.rcParams.update(Plot_Style)
 
 def training_loop(model, train_loader, val_loader, loss_function, num_epochs, device):
     model.to(device)
@@ -178,3 +210,47 @@ def predict_catgory(model,text,vocab,preprocess_text,device):
     category = "Vegetable Recipe" if predicted_class == 1 else "Fruit Recipe"
 
     return category
+
+
+def plot_and_select_best_model(all_trained_data,bar_color=color_map['blue']):
+
+    models_performance = {
+        name : results['val_f1'] for name,(model,results) in all_trained_data.items()
+    }
+
+    performance_series = pd.Series(models_performance).sort_values(ascending=False)
+
+
+    performance_series_pct = performance_series * 100
+
+    plt.figure(figsize=(10, 6))
+
+    ax = performance_series_pct.plot(kind='bar', color=bar_color,edgecolor='black',width=0.7)
+
+    ax.grid(axis='y', linestyle='--', alpha=0.7)
+
+    ax.set_ylim(0, 100)
+
+    for bar in ax.patches:
+
+        ax.annotate(f'{bar.get_height():.2f}%', 
+                    (bar.get_x() + bar.get_width() / 2, 
+                    bar.get_height() / 2), 
+                    ha='center', 
+                    va='center',
+                    size=12,
+                    color='white',)
+        
+
+        ax.set_title('Model Performance Comparison (F1 Score)',fontsize=16,pad=20)
+
+        ax.set_ylabel('F1 Score (%)',fontsize=14,labelpad=15)
+
+        ax.tick_params(axis='x', rotation=0, labelsize=12)
+
+        plt.tight_layout()
+
+        best_model_name = performance_series.index[0]
+        best_model_instance = all_trained_data[best_model_name][0]
+
+    return best_model_instance
